@@ -14,3 +14,5 @@ Position of transition layer is atleast 2 layers away from the input image.
 Number of epochs is the no of times training set runs to train the model.We need to increase the number of epochs when we need to increase th accuracy of the model.
 Dropout is used to increase accuracy of the test set to reduce over fitting. and reduces the difference between training and test set.
 When the difference between training set and test set is large, then we use drop out to reduce overfitting.
+The final global receptive field (at the final prediction layer or output layer) to be equal to the size of the image. Max pooling needs to be atleast 2 layers away from the final prediction layer.
+Batch normalisation can be next to the final prediction layer.
