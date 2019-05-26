@@ -20,3 +20,5 @@ We go ahead with a larger kernel when we need better accuracy.
 We know our kernel is not going well when the accuracy does does not pick in the first couple of epochs in the model.
 Batch size is the number of convolutions in batch.The batch size helps improve accuracy.
 We need to add validation checks if check if our model is training correctly or not.
+While training deep neural networks, it is quite useful to reduce learning rate as the training progresses. This can be done by using pre-defined learning rate schedules or adaptive learning rate methods. 
+Adam variant employs dynamic bounds on learning rates to achieve a gradual and smooth transition to SGD. SGD is a variant of gradient descent. Instead of performing computations on the whole dataset that redundant and inefficient, SGD only computes on a small subset or random selection of data examples. SGD produces the same performance as regular gradient descent when the learning rate is low.
