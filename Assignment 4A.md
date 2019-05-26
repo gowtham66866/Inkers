@@ -16,3 +16,7 @@ Dropout is used to increase accuracy of the test set to reduce over fitting. and
 When the difference between training set and test set is large, then we use drop out to reduce overfitting.
 The final global receptive field (at the final prediction layer or output layer) to be equal to the size of the image. Max pooling needs to be atleast 2 layers away from the final prediction layer.
 Batch normalisation can be next to the final prediction layer.
+We go ahead with a larger kernel when we need better accuracy.
+We know our kernel is not going well when the accuracy does does not pick in the first couple of epochs in the model.
+Batch size is the number of convolutions in batch.The batch size helps improve accuracy.
+We need to add validation checks if check if our model is training correctly or not.
