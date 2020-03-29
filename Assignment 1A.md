@@ -113,8 +113,15 @@ Answer is 100
 3X3
 1X1
 
+How are kernels initialized? 
+Kernels are updated via backpropagation when training although we always have a choice of not updating some/all kernels.
+Also , it is possible to set some of these kernels with predetermined 'patterns' to accelerate the learning. This is equivalent to saying that we are using a weight initialization method for CNN.
 
 
+What happens during the training of a DNN?
+Neural network consist of different connected layers of nodes, each layer has many coefficients and bias, initialized randomly for example.Training a neural network to do something is basically trying to reach the optimal coefficients and bias that would match an input to the desired output.
+If we want to design a neural network that can recognize if a picture is a picture of a dog or a cat, then given an input image, the neural network will try to predict whether the picture is a dog or a cat. With the result of the prediction, the neural net will compute the error between the result and the expected result. This error will be back propagated through the layers and will evolve the parameters of the layers in order to reduce the error for the next predictions.
+We always need an initial data set to train your neural network. Neural networks is all about learning from data.
 
 
 
